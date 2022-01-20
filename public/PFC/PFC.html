@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="shortcut icon" href="assets/images/profile.jpg" type="image/x-icon">
+  <title>Portfolio</title>
+</head>
+
+<body class="dark">
+  <header class="header">
+    <!-- modo oscuro y claro -->
+    <div class="switches">
+      <div id="toggle-theme" class="toggle-theme">
+
+        <img id="toggle-icon" src="assets/icons/moon.svg" alt="moon" class="toggle-theme__icon no-select">
+        <p id="toggle-text" class="toggle-theme__text no-select">Dark Mode</p>
+
+      </div>
+    </div>
+    <!-- termina modo oscuro y claro  -->
+
+    <!-- mylogo -->
+    <div class="mylogo">
+      <p class="mylogo__text no-select">  EliF  </p>
+    </div>
+
+    <!-- colores -->
+    <div id="toggle-colors" class="colors">
+      <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+      <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+      <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+      <div data-color="hsl(40, 84%, 56%)" class="colors__item colors__item--orange"></div>
+
+    </div>
+  </header>
+
+
+
+
+  <!-- MAIN CONTENIDO PRINCIPAL  -->
+  <!-- ---------------------------------------->
+  <main class="main">
+
+    <section class="column column--left">
+
+      <!-- PROFILE ---------------------- -->
+      <article class="card card--profile">
+        <div class="card__image-container">
+          <img src="assets/images/profile.jpg" alt="">
+        </div>
+        <!-- contenido PROFILE  -->
+        <div class="card__header">
+          <h2 class="card__title no-margin">Eliseo Arévalo</h2>
+          <p class="card__subtitle">Frontend developer</p>
+        </div>
+        <!-- -  -->
+        <div class="card__body">
+          <div class="card__link">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:elisevalo.dev@gmail.com">elisevalo.dev@gmail.com</a>
+          </div>
+          <div class="card__link">
+            <i class="fas fa-phone-alt icon"></i>
+            <a href="tel:74629868">+503-74629868</a>
+          </div>
+        </div>
+        <p class="card__text">
+          
+        </p>
+      </article>
+
+      <!--! //////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+
+      <!-- //  EXPERIENCIA  -->
+      <!-- <article class="card card-experience">
+        <h2 class="card__title">Experiences</h2>
+        <div class="experience">
+          <img src="assets/images/logo.png" alt="logo" class="experience__image">
+          <div class="experience__info">
+            <p class="experience__time">Feb 2017 - Current</p>
+            <h3 class="experience__job">Frontend developer</h3>
+            <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita labore
+              et neque quos numquam vel consequatur adipisci! Mollitia, debitis ad?</p>
+          </div>
+        </div>
+      </article> -->
+
+      <!-- HObBIES  -->
+      <!-- <article class="card card--hobbies">
+        <h2 class="card__title">Hobbies</h2>
+        <div class="card__image-container">
+          <img src="assets/images/hobbie.jpg" alt="instrument/band">
+        </div>
+        <h3 class="hobbie__title">learn to play new instruments</h3>
+        <p class="card__text">I always like to learn something new that challenges me from new technologies to even
+          music as I already know how to play:</p>
+      </article> -->
+
+    </section>
+
+
+
+
+
+
+    <!--! //////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+    <!-- --------------------------------------------------
+    ------------------------------------------------ -->
+    <!-- Columna derecha / skills etc  -->
+    <section class="column column--right">
+
+
+      <article class="card card--project project--title">
+
+        <h2 class="project--title--  ">SKILLS </h2> <hr>
+
+      </article>
+      <!-- card front  -->
+      <article class="card firt">
+        <h2 class="card__title">Front end</h2>
+
+        <small>Experience</small>
+        <div class="skills">
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">3</span>
+
+          </div>
+
+          <div class="skills">
+
+            <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--65"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Python</p>
+              <div class="skills__bar skills__bar--30"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">React</p>
+              <div class="skills__bar skills__bar--40"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- card design  -->
+      <article class="card">
+        <h2 class="card__title">Design</h2>
+
+        <div class="skills">
+
+          <div class="skills__item">
+            <p class="skills__tech">Photoshop</p>
+            <div class="skills__bar skills__bar--40"></div>
+          </div>
+
+          <div class="skills__item">
+            <p class="skills__tech">Figma</p>
+            <div class="skills__bar skills__bar--65"></div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- diujo  -->
+      <article class="card">
+        <h2 class="card__title">drawing / illustration</h2>
+        <div class="skills">
+
+          <div class="skills__item">
+            <p class="skills__tech">Traditional</p>
+            <div class="skills__bar skills__bar--100"></div>
+          </div>
+
+          <div class="skills__item">
+            <p class="skills__tech">Digital</p>
+            <div class="skills__bar skills__bar--65"></div>
+          </div>
+
+          <div class="skills__item">
+            <p class="skills__tech">Realistic</p>
+            <div class="skills__bar skills__bar--65"></div>
+          </div>
+
+        </div>
+      </article>
+
+      <!--! //////////////////////////////////////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  -->
+
+      <!--! PROYECTOS-->
+      <article class="card card--project project--title">
+
+        <h2 class="project--title--  ">PROJECTS </h2> <hr>
+
+      </article>
+      <article class="card card--project">
+
+        <div class="card__image-container">
+          <img src="assets/images/project.png" alt="landing page escolar" class="card__image image--project">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">JS</span>        
+            <span class="project__tag">HTML</span>      
+            <span class="project__tag">CSS(SASS)</span>
+            <span class="project__tag">Responsive</span>
+
+
+          </div>
+
+          <h2 class="card__title <!--spacing-->">PEDRO F. CANTOR (WEB SITE)</h2>
+          <p class="card__text"> Official educational website of the PEDRO F CANTOR school in which the institution publishes news and communications in addition to having its history, games and others
+          </p>
+
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">More info</a>
+
+          </div>
+
+        </div>
+      </article>
+
+
+      <!-- proyecto 2  -->
+      <article class="card card--project">
+
+        <div class="card__image-container">
+          <img src="assets/images/project2.png" alt="landing page escolar" class="card__image image--project">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">JS</span>        
+            <span class="project__tag">HTML</span>      
+            <span class="project__tag">CSS</span>
+            <span class="project__tag">Bootstrap</span>
+
+
+          </div>
+
+          <h2 class="card__title spacing">Peronal Blog</h2>
+          <p class="card__text">Responsive personal blog with art gallery</p>
+          
+
+          <div class="buttons">
+            <a href="#" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">More info</a>
+
+          </div>
+
+        </div>
+      </article>
+
+      <!-- -------------------  -->
+
+      <!-- proyecto 3 -->
+      <article class="card card--project">
+
+        <div class="card__image-container">
+          <img src="assets/images/project3.png" alt="landing page escolar" class="card__image image--project">
+        </div>
+        <div class="project">
+          <div class="project__tags">
+            <span class="project__tag">JSvanilla</span>        
+            <span class="project__tag">HTML</span>      
+            <span class="project__tag">CSS</span>
+        
+
+
+          </div>
+
+          <h2 class="card__title spacing">Cifrador Cesar</h2>
+          <p class="card__text">Cifado y Desifrado de Mensajes Cesar.Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra.
+          </p>
+          
+
+          <div class="buttons">
+            <a target="_blank" href="./public/cifrador/index.html" class="button button--primary">Demo</a>
+            <a href="#" class="button button--ghost">More info</a>
+
+          </div>
+
+        </div>
+      </article>
+
+      
+      
+      <!-- ---  -->
+    </section>
+
+  </main>
+
+
+
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+#Star-1{
+    animation: star-move 5s infinite ease-in-out alternate;
+    animation-delay: 0s;
+}
+
+#Star-2 {
+    animation: star-move 5s infinite ease-in-out alternate;
+    animation-delay: .3s;
+}
+#Star-3 {
+    animation: star-move 5s infinite ease-in-out alternate;
+    animation-delay: .12s;
+}
+#Star-4 {
+    animation: star-move 5s infinite ease-in-out alternate;
+    animation-delay: .2s;
+}
+
+
+@keyframes star-move{
+    0%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-100%);
+        fill-opacity: 0;
+
+    }
+    80% {
+        transform: translateY(5%);
+        fill-opacity: 0.2;
+
+
+    }
+    90%{
+        transform:translateY(0);
+        fill-opacity: 1;
+    }
+}

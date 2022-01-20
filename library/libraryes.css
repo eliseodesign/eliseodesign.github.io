@@ -1,0 +1,6 @@
+/* AOS library of animation; used in card 
+https: //michalsnik.github.io/aos/*/
+@import url(./aos/aos.css);
+
+/* TOOLTIP small library used of element before */
+@import url(./my-tooltip/tooltip.css);
