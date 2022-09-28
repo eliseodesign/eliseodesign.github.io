@@ -546,27 +546,36 @@ body.dark .skills__bar{
     }
 }
 .project__tags{
-    display:none;
+    /* display:none; */
     justify-content: flex-start;
+    display: flex;
     margin: .5em 0;
+
+    
     font-size: .7rem;
     font-weight: 600;
-    opacity: .4;
-    width: 100%;
+    opacity: .3;
+  
 }
 @media screen and (min-width:720px) {
     .project__tag{
+        align-items: center;
+        justify-content: center;
+    }
+    .project__tag{
         width: 100%;
         font-size: .8rem;
+        
     }
 }
 .project__tag{
-    margin-right: 1em;
+    margin-right: .5em;
     width: min-content;
     padding: .4em .8em;
-    border-radius: var(--border-radius);
+    border-radius: .2em;
     background-color: var(--primary-color);
-    color:var(--bg-color);
+    color:var(--bg-card-color);
+
 
 }
 /* .project__tag::before{

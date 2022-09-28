@@ -68,7 +68,7 @@
     </div>
 
     <!-- colores -->
-    <div id="toggle-colors" class="colors">
+    <div id="toggle-colors" data-color="hsl(214, 84%, 56%)" class="colors">
       <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
       <!-- <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div> -->
       <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
@@ -294,7 +294,7 @@
         </div>
         <p class="card__text">
           Hi, I am Eliseo Francisco Arévalo, front-end developer, that is, I make web pages like this, you can see my
-          projects right here, I am also a cartoonist and illustrator, you can see my gallery if you are intereste
+          projects right here, I am also a illustrator
         </p>
 
         <a href="#">
@@ -305,10 +305,10 @@
         <div class="card contact-red">
 
           <div class="contact-red--icon" data-aos="zoom">
-            <a href="#"> <img class="red--icon facebook" src="assets/icons/facebook.svg" alt=""> </a>
-            <a href="#"> <img class="red--icon instagram" src="assets/icons/instagram.svg" alt=""> </a>
-            <a href="#"> <img class="red--icon whatsapp" src="assets/icons/whatsapp.svg" alt=""> </a>
-            <a href="#"> <img class="red--icon github" src="assets/icons/github.svg" alt=""> </a>
+            <a href="https://web.facebook.com/eliseo.arevalo25"> <img class="red--icon facebook" src="assets/icons/facebook.svg" alt=""> </a>
+            <a href="https://www.instagram.com/eliseo_arevalo_f?r=nametag"> <img class="red--icon instagram" src="assets/icons/instagram.svg" alt=""> </a>
+            <a href="https://api.whatsapp.com/send?phone=+50374629868&text=hola?"> <img class="red--icon whatsapp" src="assets/icons/whatsapp.svg" alt=""> </a>
+            <a href="https://github.com/eliseodesign"> <img class="red--icon github" src="assets/icons/github.svg" alt=""> </a>
 
           </div>
 
@@ -384,12 +384,12 @@
         <h2 class="card__title">Front end</h2>
 
         <small>Experience</small>
-        <div class="skills">
+        <!-- <div class="skills">
           <div class="skills__header">
             <span class="skills__start-level">0</span>
             <span class="skills__start-level">3</span>
 
-          </div>
+          </div> -->
 
           <div class="skills">
 
@@ -400,7 +400,17 @@
 
             <div class="skills__item">
               <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Sass</p>
               <div class="skills__bar skills__bar--70"></div>
+            </div>
+
+            <div class="skills__item">
+              <p class="skills__tech">Bootstrap</p>
+              <div class="skills__bar skills__bar--30"></div>
             </div>
 
             <div class="skills__item">
@@ -408,11 +418,9 @@
               <div class="skills__bar skills__bar--65"></div>
             </div>
 
-            <div class="skills__item">
-              <p class="skills__tech">Python</p>
-              <div class="skills__bar skills__bar--30"></div>
-            </div>
 
+
+<!-- 0   3    -->
 <!--             <div class="skills__item">
               <p class="skills__tech">React</p>
               <div class="skills__bar skills__bar--40"></div>
@@ -421,11 +429,42 @@
         </div>
       </article>
 
-      <!-- card design  -->
+
+            <!-- BACKEND  -->
+      <article class="card"data-aos="zoom-in">
+        <h2 class="card__title">Backend</h2>
+        <div class="skills">
+
+            <div class="skills__item">
+              <p class="skills__tech">Python</p>
+              <div class="skills__bar skills__bar--40"></div>
+            </div>
+
+          <div class="skills__item">
+            <p class="skills__tech">Node js</p>
+            <div class="skills__bar skills__bar--50"></div>
+          </div>
+
+
+
+        </div>
+      </article>
+
+      <!-- DESING  -->
       <article class="card" data-aos="zoom-in">
-        <h2 class="card__title">Design</h2>
+        <h2 class="card__title">Dev tools</h2>
 
         <div class="skills">
+
+          <div class="skills__item">
+            <p class="skills__tech">Git</p>
+            <div class="skills__bar skills__bar--30"></div>
+          </div>
+
+          <div class="skills__item">
+            <p class="skills__tech">Markdown</p>
+            <div class="skills__bar skills__bar--80"></div>
+          </div>
 
           <div class="skills__item">
             <p class="skills__tech">Photoshop</p>
@@ -440,28 +479,7 @@
         </div>
       </article>
 
-      <!-- diujo  -->
-      <article class="card"data-aos="zoom-in">
-        <h2 class="card__title">drawing / illustration</h2>
-        <div class="skills">
 
-          <div class="skills__item">
-            <p class="skills__tech">Traditional</p>
-            <div class="skills__bar skills__bar--100"></div>
-          </div>
-
-          <div class="skills__item">
-            <p class="skills__tech">Digital</p>
-            <div class="skills__bar skills__bar--65"></div>
-          </div>
-
-          <div class="skills__item">
-            <p class="skills__tech">Realistic</p>
-            <div class="skills__bar skills__bar--65"></div>
-          </div>
-
-        </div>
-      </article>
 
 
       
@@ -475,38 +493,40 @@
 
       </article>
 
-      <!-- proyecto 3 -->
+      <!-- proyecto CIFRADOR CESAR -->
       <article data-aos="zoom-in" class="card card--project">
 
         <div class="card__image-container">
           <img src="https://i.ibb.co/hdWymMV/Captura-de-pantalla-2022-09-10-193046.webp" alt="landing page escolar" class="card__image image--project">
         </div>
         <div class="project">
-          <div class="project__tags">
-            <span class="project__tag">JSvanilla</span>
-            <span class="project__tag">HTML</span>
-            <span class="project__tag">CSS</span>
 
-
-
-          </div>
 
           <h2 class="card__title">Caesar cipher</h2>
+
           <p class="card__text">Cesar Encryption and Decryption of Messages. It is a type of substitution encryption in which a
             letter in the original text is replaced by another letter.
           </p>
 
+                    <div class="project__tags">
+            <span class="project__tag">JS</span>
+            <span class="project__tag">HTML</span>
+            <span class="project__tag">CSS</span>
+          </div>
+
+          
+
 
           <div class="buttons">
-            <a target="_blank" href="./public/cifrador/index.html" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">More info</a>
+            <a target="_blank" href="https://eliseodesign.github.io/cifrador-cesar/" class="button button--primary">Demo</a>
+            <a href="https://github.com/eliseodesign/cifrador-cesar#readme" class="button button--ghost">Github</a>
 
           </div>
 
         </div>
       </article>
 
-      <!-- proyecto 1  -->
+      <!-- proyecto PEDRO F CANTOR  -->
 
 
       <article data-aos="zoom-in" class="card card--project">
@@ -515,24 +535,23 @@
           <img src="https://i.ibb.co/JxLDQMB/Captura-de-pantalla-2022-09-10-193002.webp" alt="landing page escolar" class="card__image image--project">
         </div>
         <div class="project">
+
+
+          <h2 class="card__title">Pedro Felix Cantor </h2>
+          <p class="card__text"> Official educational website of the PEDRO F CANTOR school in which the institution
+            publishes news and communications in addition to having its history, games and others
+          </p>
+
           <div class="project__tags">
             <span class="project__tag">JS</span>
             <span class="project__tag">HTML</span>
             <span class="project__tag">SASS</span>
             <span class="project__tag">Responsive</span>
-
-
           </div>
 
-          <h2 class="card__title <!--spacing-->">Pedro Felix Cantor </h2>
-          <p class="card__text"> Official educational website of the PEDRO F CANTOR school in which the institution
-            publishes news and communications in addition to having its history, games and others
-          </p>
-
-
           <div class="buttons">
-            <a href="https://eliseodesign.github.io/cantor/" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">More info</a>
+            <a href="https://eliseodesign.github.io/pedrofcantor/" class="button button--primary">Demo</a>
+            <a href="https://github.com/eliseodesign/cifrador-cesar#readme" class="button button--ghost">Github</a>
 
           </div>
 
@@ -547,6 +566,11 @@
           <img src="https://i.ibb.co/wY09JjW/Captura-de-pantalla-2022-09-10-194504.webp" alt="landing page escolar" class="card__image image--project">
         </div>
         <div class="project">
+
+
+          <h2 class="card__title">Online Timer</h2>
+          <p class="card__text">simple timer app with custom time list and wait audio, developed using javascript setTimeOut and setInterval</p>
+
           <div class="project__tags">
             <span class="project__tag">JS</span>
             <span class="project__tag">HTML</span>
@@ -556,13 +580,9 @@
 
           </div>
 
-          <h2 class="card__title">Online Timer</h2>
-          <p class="card__text">simple timer app with custom time list and wait audio, developed using javascript setTimeOut and setInterval</p>
-
-
           <div class="buttons">
             <a href="https://eliseodesign.github.io/temporizador/" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">More info</a>
+            <a href="https://github.com/eliseodesign/temporizador" class="button button--ghost">Github</a>
 
           </div>
 
@@ -573,34 +593,6 @@
       
       
             <!-- proyecto 4  -->
-      <article data-aos="zoom-in" class="card card--project">
-
-        <div class="card__image-container">
-          <img src="https://i.ibb.co/Z6crsgc/C-Users-MINEDUCYT-Downloads-Nueva-carpeta-4-pagina-web-index-html.png" alt="landing page plants" class="card__image image--project">
-        </div>
-        <div class="project">
-          <div class="project__tags">
-    
-            <span class="project__tag">HTML</span>
-            <span class="project__tag">CSS</span>
-
-
-
-          </div>
-
-          <h2 class="card__title">Plants</h2>
-          <p class="card__text">
-Simple page using flex on plants</p>
-
-
-          <div class="buttons">
-            <a href="https://eliseodesign.github.io/plantas/" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">More info</a>
-
-          </div>
-
-        </div>
-      </article>
 
       <!-- -------------------  -->
 
@@ -614,6 +606,12 @@ Simple page using flex on plants</p>
           <img src="https://i.ibb.co/xH0XByb/preguntas.png" alt="landing page plants" class="card__image image--project">
         </div>
         <div class="project">
+
+
+          <h2 class="card__title">Quizzi</h2>
+          <p class="card__text">Cantor story quizzi style question game designed with css grid</p>
+
+
           <div class="project__tags">
     
             <span class="project__tag">JS</span>
@@ -623,14 +621,9 @@ Simple page using flex on plants</p>
 
 
           </div>
-
-          <h2 class="card__title">Quizzi</h2>
-          <p class="card__text">Cantor story quizzi style question game designed with css grid</p>
-
-
           <div class="buttons">
-            <a href="https://eliseodesign.github.io/cantor100/scss/games/quizzi/preguntas.html" class="button button--primary">Demo</a>
-            <a href="#" class="button button--ghost">More info</a>
+            <a href="https://eliseodesign.github.io/pedrofcantor/pages/edu/juegos/quizzi/preguntas.html" class="button button--primary">Demo</a>
+            <a href="https://github.com/eliseodesign/pedrofcantor/tree/main/pages/edu/juegos/quizzi" class="button button--ghost">Github</a>
 
           </div>
 
