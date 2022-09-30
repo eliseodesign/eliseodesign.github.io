@@ -49,28 +49,34 @@ function load(){
 
 //////////////////////////////////7 
 // color 
-// loadColor()
-// const toggleColor = document.getElementById('toggle-colors')
+const toggleColor = document.getElementById('toggle-colors')
 
-// const rootStyles = document.documentElement.style;
-
-// toggleColor.addEventListener('click', (e)=>{
-//     rootStyles.setProperty('--primary-color', e.target.dataset.color);
-//     storeColor(e.target.dataset.color);
-    
-// })
+const rootStyles = document.documentElement.style;
+loadColor()
 
 
-// function storeColor(value){
-//     alert(localStorage.setItem("color-actual", value))
-// }
+toggleColor.addEventListener('click', (e)=>{
+    rootStyles.setProperty('--primary-color', e.target.dataset.color);
+    storeColor(e.target.dataset.color);
+      
+})
+
+
+function storeColor(value){
+    localStorage.setItem("color-actual", value)
+    // alert(localStorage.setItem("color-actual", value))
+}
 
 
 
-// function loadColor(){
-//     const color = localStorage.getItem("color-actual")
-//     if(color != undefined){
+function loadColor(){
+    const color = localStorage.getItem("color-actual")
 
-//     }
-// }
+    if(!color){
+        storeColor("none")
+    }
+    else{
+        rootStyles.setProperty('--primary-color', color);
+    }
+}
 
