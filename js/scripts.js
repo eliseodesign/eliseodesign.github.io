@@ -3,7 +3,7 @@ const toggleIcon = document.getElementById('toggle-icon');
 const toggleText = document.getElementById('toggle-text')
 
 const body = document.querySelector("body")
-console.log(body)
+
 
 load()
 
@@ -25,17 +25,17 @@ toggleTheme.addEventListener('click', ()=>{
 
 
 function store(value){
-    localStorage.setItem('dark', value);
+    localStorage.setItem('dark-mode', value);
 }
 
 
 function load(){
-    const darkmode = localStorage.getItem('dark');
+    const darkmode = localStorage.getItem('dark-mode');
 
     if(!darkmode){
         store('false');
     }else if(darkmode == 'true'){
-        body.classList.add('dark');
+        body.classList.toggle('dark');
         toggleIcon.src='assets/icons/sun.svg'
         toggleText.textContent='Light Mode'
 
@@ -74,6 +74,8 @@ function loadColor(){
 
     if(!color){
         storeColor("none")
+        rootStyles.setProperty('--primary-color', 'hsl(214, 84%, 56%)');
+        
     }
     else{
         rootStyles.setProperty('--primary-color', color);
