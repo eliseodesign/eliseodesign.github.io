@@ -25,12 +25,12 @@ toggleTheme.addEventListener('click', ()=>{
 
 
 function store(value){
-    localStorage.setItem('dark', value);
+    localStorage.setItem('dark-mode', value);
 }
 
 
 function load(){
-    const darkmode = localStorage.getItem('dark');
+    const darkmode = localStorage.getItem('dark-mode');
 
     if(!darkmode){
         store('false');
