@@ -1,18 +1,16 @@
 const column_right = document.querySelector(".column--right");
 
-let fragment = document.createDocumentFragment()
+let fragment = document.createDocumentFragment();
 
-
-for(let i = 0; i < proyects.length; i++){
+for (let i = 0; i < proyects.length; i++) {
   let actual = proyects[i];
-    
-    let div = document.createElement("ARTICLE");
 
-    div.setAttribute("data-aos", "zoom-in");
-    div.classList.add("card", "card--project");
+  let div = document.createElement("ARTICLE");
 
+  div.setAttribute("data-aos", "zoom-in");
+  div.classList.add("card", "card--project");
 
-    div.innerHTML = `
+  div.innerHTML = `
     <article data-aos="zoom-in" class="card card--project">
 
         <div class="card__image-container">
@@ -25,15 +23,14 @@ for(let i = 0; i < proyects.length; i++){
           <p class="card__text"> ${actual.description}
           </p>
 
-          <!--
+          
           <div class="project__tags">
-            <span class="project__tag">JS</span>
-            <span class="project__tag">HTML</span>
-            <span class="project__tag">SASS</span>
-            <span class="project__tag">Responsive</span>
+            <span class="project__tag">${actual.tecnologies[0]}</span>
+            <span class="project__tag">${actual.tecnologies[1]}</span>
+            <span class="project__tag">${actual.tecnologies[2]}</span>
           </div>
 
-          -->
+          
           
           <div class="buttons">
             <a target="_blank" href="${actual.demo}" class="button button--primary">Demo</a>
@@ -43,14 +40,11 @@ for(let i = 0; i < proyects.length; i++){
 
         </div>
       </article>
-    `
+    `;
 
-  
-    console.log(div.children)
+  console.log(div.children);
 
-
-    fragment.appendChild(div)
+  fragment.appendChild(div);
 }
 
-
-column_right.appendChild(fragment)
+column_right.appendChild(fragment);
