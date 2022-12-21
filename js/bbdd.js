@@ -12,7 +12,7 @@ let proyects = [
     // Pedro F. Cantor
     name: "Pedro F. Cantor - web",
     description:
-      "Official educational website of the PEDRO F CANTOR school in which the institution publishes news and communications in addition to having its history, games and others",
+      "Official website of the PEDRO F CANTOR school in which the institution publishes news and communications in addition to having its history, games and others",
     tecnologies: ["JS", "HTML", "Sass", "Responsive"],
     demo: "https://cantorweb.github.io/index.html",
     github: "https://github.com/eliseodesign/pedrofcantor",
@@ -35,8 +35,8 @@ let proyects = [
     description:
       "Simple timer app with custom time list and wait audio, developed using javascript setTimeOut and setInterval",
     tecnologies: ["Js", "HTML", "CSS"],
-    demo: "https://eliseodesign.github.io/temporizador/",
-    github: "https://github.com/eliseodesign/temporizador",
+    demo: "https://eliseodesign.github.io/js-timer/",
+    github: "https://github.com/eliseodesign/js-timer",
     reference: "timer",
   },
 ];
